@@ -4,9 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import MainPage from './components/MainPage'
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/css'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='container'>
