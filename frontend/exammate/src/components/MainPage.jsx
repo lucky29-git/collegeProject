@@ -56,7 +56,7 @@ export default function MainPage() {
   };
 
   return (
-    <div style={{ position: 'relative', top: '-7vh' }}>
+    <div style={{ position: 'relative', top: '-15vh' }}>
       <h1>Previous Year Question Papers & Notes</h1>
       <p>Tackle your exam with previous year papers,notes and video lectures all in one place.</p>
       
