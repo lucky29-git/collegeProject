@@ -1,9 +1,11 @@
 import React from 'react';
-import '../App.css'
-import '../index.css'
+// import '../App.css'
+// import '../index.css'
+import './Navbar.css'
+
 export default function Navbar() {
   return (
-    <div className="container navcontainer relative top-[-28vh] ">
+    <div className="container navcontainer relative top-[-18vh] ">
       <header className="flex flex-wrap items-center justify-between py-3 mb-4 border-b">
         <div className="col-md-3 mb-2 mb-md-0">
           <a href="/" className="inline-flex items-center link-body-emphasis text-decoration-none">

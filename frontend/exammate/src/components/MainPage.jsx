@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import '../App.css'
-import '../index.css'
+// import '../App.css'
+// import '../index.css'
+import './MainPage.css';
+
 export default function MainPage() {
   const [showSections, setShowSections] = useState(false);
   const [selectedButton, setSelectedButton] = useState(null);
