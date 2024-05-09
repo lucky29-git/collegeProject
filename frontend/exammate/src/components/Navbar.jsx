@@ -15,7 +15,7 @@ export default function Navbar() {
         </div>
 
         <ul className="nav flex flex-wrap col-12 col-md-auto mb-2 justify-center md:justify-center">
-          <li><Link to='/pyqs' className="nav-link px-2 customLink">PYQs</Link></li>
+          <li><Link to='/dashboard' className="nav-link px-2 customLink">PYQs</Link></li>
           <li><Link to='/resources' className="nav-link px-2 customLink">Resources</Link></li>
           <li><Link to='/notes' className="nav-link px-2 customLink">Notes</Link></li>
           <li><Link to='/about' className="nav-link px-2 customLink">About</Link></li>
