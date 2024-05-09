@@ -18,7 +18,7 @@ function App() {
   // </div>
     <BrowserRouter>
     <Routes>
-      <Route path='dashboard' element = {<Suspense fallback={"Loading..."} ><Dashboard2/></Suspense>} />
+      <Route path='dashboard' element = {<Suspense fallback={"Loading..."} ><Dashboard/></Suspense>} />
       <Route path='signin' element = {<Suspense fallback={"Loading..."} ><Signin/></Suspense>} />
       <Route path='signup' element = {<Suspense fallback={"Loading..."} ><Signup/></Suspense>} />
     </Routes>
