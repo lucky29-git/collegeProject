@@ -67,7 +67,7 @@ export default function MainPage() {
   };
 
   return (
-    <div className="relative top-[-15vh] ">
+    <div className="relative mainpagediv ">
       <h1 className='font-bold' >Previous Year Question Papers & Notes</h1>
       <p className='font-semibold mt-8'>Tackle your exam with previous year papers, notes and video lectures all in one place.</p>
 

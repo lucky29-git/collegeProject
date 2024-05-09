@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <div className="container navcontainer relative top-[-19vh] ">
+    <div className="container navcontainer relative">
       <header className="flex flex-wrap items-center justify-between py-3 mb-4 border-b">
         <div className="col-md-3 mb-2 mb-md-0">
           <a href="/" className="inline-flex items-center link-body-emphasis text-decoration-none">

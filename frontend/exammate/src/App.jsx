@@ -9,6 +9,9 @@ import Signin from './pages/Signin.jsx'
 import Signup from './pages/Signup.jsx'
 import Navbar from './components/Navbar.jsx'
 import MainPage from './components/MainPage.jsx';
+import Resources from './pages/Resources.jsx';
+import Notes from './pages/Notes.jsx';
+import About from './pages/About.jsx';
 function App() {
 
   return (
@@ -21,6 +24,9 @@ function App() {
       <Route path='dashboard' element = {<Suspense fallback={"Loading..."} ><Dashboard2/></Suspense>} />
       <Route path='signin' element = {<Suspense fallback={"Loading..."} ><Signin/></Suspense>} />
       <Route path='signup' element = {<Suspense fallback={"Loading..."} ><Signup/></Suspense>} />
+      <Route path='resources' element = {<Suspense fallback={"Loading..."} ><Resources /></Suspense>} />
+      <Route path='notes' element = {<Suspense fallback={"Loading..."} ><Notes /></Suspense>} />
+      <Route path='about' element = {<Suspense fallback={"Loading..."} ><About /></Suspense>} />
     </Routes>
     </BrowserRouter>
 
