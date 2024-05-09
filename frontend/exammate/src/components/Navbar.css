@@ -1,30 +1,95 @@
-.navcontainer{
-    /* margin-top: -40px; */
+/* Navbar.css */
+
+.navcontainer {
     margin-bottom: 10rem;
-}
-
-
-.customLink{
+  }
+  
+  .customLink {
     color: inherit;
     cursor: pointer;
     color: black;
-}
-
-.customButton{
+  }
+  
+  .customButton {
     color: black;
-}
-
-.customButton:hover{
+  }
+  
+  .customButton:hover {
     color: white;
-}
-
-.navcontainer ul{
+  }
+  
+  .navcontainer ul {
     display: flex;
     gap: 2rem;
-}
-
-.navcontainer ul li:hover{
+  }
+  
+  .navcontainer ul li:hover {
     font-size: 1.05rem;
-}
-
-
+  }
+  
+  .nav-menu {
+    display: flex; /* Display the menu by default */
+    flex-direction: row; /* Align items horizontally by default */
+    gap: 2rem; /* Add some spacing between items */
+  }
+  
+  .menu-toggle {
+    display: none; /* Initially hide the menu toggle */
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+  }
+  
+  .menu-icon:before,
+  .menu-icon:after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-icon:before {
+    top: -10px;
+  }
+  
+  .menu-icon:after {
+    top: 10px;
+  }
+  
+  .open .menu-icon {
+    background-color: transparent;
+  }
+  
+  .open .menu-icon:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .open .menu-icon:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none; /* Hide the menu on smaller screens by default */
+    }
+  
+    .nav-menu.open {
+      display: flex; /* Display the menu when it's open */
+      flex-direction: column; /* Align items vertically when it's open */
+      gap: 1rem; /* Add some spacing between items when it's open */
+    }
+  
+    .menu-toggle {
+      display: block; /* Display the menu toggle on smaller screens */
+    }
+  }
+  
