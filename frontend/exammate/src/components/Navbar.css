@@ -3,14 +3,27 @@
     margin-bottom: 10rem;
 }
 
-a{
-    color: black;
-}
-
 .customLink{
     color: inherit;
     cursor: pointer;
+    color: black;
 }
 
+.customButton{
+    color: black;
+}
+
+.customButton:hover{
+    color: white;
+}
+
+.navcontainer ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.navcontainer ul li:hover{
+    font-size: 1.05rem;
+}
 
 
