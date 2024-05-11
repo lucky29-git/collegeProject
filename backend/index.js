@@ -73,6 +73,21 @@ app.post('/upload', async function(req, res){
    
 })
 
+app.post('/paper' , async function(req, res){
+    const semester = req.body.semester;
+    const subject = req.body.subject;
+    console.log(req.body);
+    const value = await QuestionPaper.find({
+        semester: semester,
+        subject: subject
+    })
+    console.log(value);
+    res.json({
+        value
+    })
+
+})
+
 app.get('/papers:semester')
 
 app.listen(port)
