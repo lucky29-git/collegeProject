@@ -16,7 +16,7 @@ const HeroSection = () => {
 
   return (
     <div>
-      <h1 className='font-bold'>Previous Year Question Papers & Notes</h1>
+      <h1 className='font-bold text-center '>Previous Year Question Papers & Notes</h1>
       <QuestionPaper onSubmit={handleSubmit} />
       <div>
         {questionPapers.map((questionPaper) => (
