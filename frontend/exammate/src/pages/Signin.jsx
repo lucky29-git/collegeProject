@@ -8,7 +8,7 @@ import {SubHeading} from '../components/SubHeading'
 function App(){
 
     return (
-        <div className="h-screen flex justify-center bg-orange-400 ">
+        <div className="h-screen flex justify-center bg-slate-300 ">
             <div className="flex flex-col justify-center">
                 <div className="rounded-lg bg-white text-center h-max p-2 px-4 w-80">
                     <Heading label={"Sign in"} />
