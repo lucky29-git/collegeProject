@@ -19,6 +19,7 @@ function App() {
   //   <Navbar />
   //   <MainPage />
   // </div>
+    
     <BrowserRouter>
     <Routes>
       <Route path='dashboard' element = {<Suspense fallback={"Loading..."} ><Dashboard/></Suspense>} />

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { createContext } from 'react';
+import { useRecoilState } from 'recoil';
+import { paperAtom, shouldRenderAtom } from '../store/atom/paperContext';
 const QuestionPaperForm = ({ onSubmit }) => {
   const [semester, setSemester] = useState('');
   const [subject, setSubject] = useState('');
@@ -18,13 +20,15 @@ const QuestionPaperForm = ({ onSubmit }) => {
     // Add more semester options with corresponding subjects
   ];
 
-  const handleSemesterChange = (selectedSemester) => {
+  const handleSemesterChange = async(selectedSemester) => {
     setSemester(selectedSemester);
     const selectedSemesterObj = semesterOptions.find((option) => option.value === selectedSemester);
     setSubjectsForSemester(selectedSemesterObj ? selectedSemesterObj.subjects : []);
     setSubject('');
   };
 
+  const [pap, setPap] = useRecoilState(paperAtom)
+  const [shouldRender, setShouldRender] = useRecoilState(shouldRenderAtom)
   const handleSubmit =async (e) => {
     e.preventDefault();
     // onSubmit(semester, subject);
@@ -36,10 +40,14 @@ const QuestionPaperForm = ({ onSubmit }) => {
     // useEffect(() => {
     let output=await axios.post('http://localhost:3000/paper', obj)
     // }, [])
-    console.log(output);
-    const PaperContext = createContext(output)
-    console.log(output.data.value[0].semester);
-    console.log(output.subject);
+    // console.log(output);
+  
+    const dataArray =Object.values(output.data.value);
+    setPap(dataArray)
+    console.log("dataaa " ,dataArray);
+    // console.log(output.data.value[0].semester);
+    // console.log(output.subject);
+    setShouldRender(true)
   };
 
   return (
