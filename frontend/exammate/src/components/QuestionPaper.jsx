@@ -9,14 +9,14 @@ const QuestionPaperForm = ({ onSubmit }) => {
   const [subjectsForSemester, setSubjectsForSemester] = useState([]);
 
   const semesterOptions = [
-    { value: '1', label: 'Semester 1', subjects: ['Math', 'Science'] },
-    { value: '2', label: 'Semester 2', subjects: ['History', 'Geography'] },
-    { value: '3', label: 'Semester 3', subjects: ['haha', 'nono'] },
-    { value: '4', label: 'Semester 4', subjects: ['jiji', 'kiki'] },
-    { value: '5', label: 'Semester 5', subjects: ['yeahhh', 'hooo'] },
-    { value: '6', label: 'Semester 6', subjects: ['data communication', 'balle2'] },
-    { value: '7', label: 'Semester 7', subjects: ['History', 'Geography'] },
-    { value: '8', label: 'Semester 8', subjects: ['History', 'Geography'] },
+    { value: '1', label: 'Semester 1', subjects: ['FOCSE', 'basic computer eng'] },
+    { value: '2', label: 'Semester 2', subjects: ['chemistry', 'electrical'] },
+    { value: '3', label: 'Semester 3', subjects: ['data structures', 'cso', 'dcd', 'discrete structure', 'edc'] },
+    { value: '4', label: 'Semester 4', subjects: ['ADA', 'ADC', 'Microprocessor', 'TOC'] },
+    { value: '5', label: 'Semester 5', subjects: ['DBMS', 'OS', 'DC','Cyber Security', 'CGM','Essence of Indian Traditional Knowledge'] },
+    { value: '6', label: 'Semester 6', subjects: ['ACA', 'CN', 'OOAD','PM','PPL'] },
+    { value: '7', label: 'Semester 7', subjects: ['Compiler design', 'Information Storage Management', 'IOT', 'Network Security', 'Software Engg'] },
+    { value: '8', label: 'Semester 8', subjects: ['Network Management', 'Soft Computing', 'Web Engineering'] },
     // Add more semester options with corresponding subjects
   ];
 

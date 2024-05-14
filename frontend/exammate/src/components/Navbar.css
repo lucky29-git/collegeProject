@@ -2,8 +2,11 @@
 
 .navcontainer {
     margin-bottom: 10rem;
+    /* height: 0.8rem; */
+    background-color: white;
   }
   
+
   .customLink {
     color: inherit;
     cursor: pointer;
@@ -76,6 +79,16 @@
     transform: rotate(-45deg);
     top: 0;
   }
+
+
+
+
+
+
+
+
+
+
   
   @media screen and (max-width: 768px) {
     .nav-menu {

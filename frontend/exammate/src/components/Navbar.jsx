@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
+// import logoImage from '../images/logo.png';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,18 +13,21 @@ export default function Navbar() {
 
   return (
     <div className="container navcontainer relative">
-      <header className="flex flex-wrap items-center justify-between mb-4 border-b">
+      <header className="flex flex-wrap items-center justify-between mb-2 ">
+        
         <div className="col-md-3 mb-2 mb-md-0">
           <Link to="/" className="inline-flex items-center link-body-emphasis text-decoration-none">
-            <span>Logo</span>
+            <span>
+              logo
+              </span>
           </Link>
         </div>
 
         <div className={`nav-menu col-12 col-md-auto mb-2 justify-center md:justify-center ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav flex flex-wrap">
-            <li><Link to='/dashboard' className="nav-link px-2 customLink">PYQs</Link></li>
-            <li><Link to='/resources' className="nav-link px-2 customLink">Resources</Link></li>
-            <li><Link to='/notes' className="nav-link px-2 customLink">Notes</Link></li>
+            <li><Link to='/dashboard' className="nav-link px-2 customLink">PYQs & NOTES</Link></li>
+            {/* <li><Link to='/resources' className="nav-link px-2 customLink">Resources</Link></li>
+            <li><Link to='/notes' className="nav-link px-2 customLink">Notes</Link></li> */}
             <li><Link to='/about' className="nav-link px-2 customLink">About</Link></li>
           </ul>
         </div>

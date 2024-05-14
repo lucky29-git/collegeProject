@@ -16,7 +16,7 @@ export default function RenderPaper({title, files}){
         <div className='flex items-center'>
         <FontAwesomeIcon icon={faFilePdf} className='text-3xl'/>
         {/* <div className='pl-10'>{title}</div> */}
-        <div className='pl-10'>Unit - 1</div>
+        <div className='pl-10'>{title}</div>
         </div>
 
         <div className='flex gap-10 items-center'>
@@ -25,4 +25,5 @@ export default function RenderPaper({title, files}){
         <button onClick={HandleDownload} >Download</button>
         </div>
     </div>
+    
 }
