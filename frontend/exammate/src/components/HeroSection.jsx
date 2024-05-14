@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import QuestionPaper from './QuestionPaper';
-
+import './HeroSection.css';
 const HeroSection = () => {
   const [questionPapers, setQuestionPapers] = useState([]);
 
@@ -16,6 +16,7 @@ const HeroSection = () => {
 
   return (
     <div>
+      
       <h1 className='font-bold text-center '>Previous Year Question Papers & Notes</h1>
       <QuestionPaper onSubmit={handleSubmit} />
       <div>

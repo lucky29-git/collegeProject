@@ -17,7 +17,7 @@ export default function Dashboard() {
   // const obj = useContext(PaperContext)
   
   return (
-    <div>
+    <div style={{background:' #f6eadd'}}>
       <div className="container ">
         <RecoilRoot>
         <External/>
@@ -30,7 +30,7 @@ export default function Dashboard() {
 function External(){
   const pap = useRecoilValue(paperAtom)
   const shouldRender = useRecoilValue(shouldRenderAtom)
-  return <div>
+  return <div >
         <Navbar />
         {/* <MainPage /> */}
         <HeroSection/>
