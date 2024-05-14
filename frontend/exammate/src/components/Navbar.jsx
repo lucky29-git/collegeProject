@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logoImage from '../images/logo.png';
 // import logoImage from '../images/logo.png';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,8 @@ export default function Navbar() {
         <div className="col-md-3 mb-2 mb-md-0">
           <Link to="/" className="inline-flex items-center link-body-emphasis text-decoration-none">
             <span>
-              logo
+            <img src={logoImage} alt="logo" className="logoimage" />
+              
               </span>
           </Link>
         </div>
