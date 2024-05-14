@@ -3,6 +3,7 @@ import axios from 'axios'
 import { createContext } from 'react';
 import { useRecoilState } from 'recoil';
 import { paperAtom, shouldRenderAtom } from '../store/atom/paperContext';
+import './QuestionPaper.css'
 const QuestionPaperForm = ({ onSubmit }) => {
   const [semester, setSemester] = useState('');
   const [subject, setSubject] = useState('');
@@ -56,7 +57,7 @@ const QuestionPaperForm = ({ onSubmit }) => {
         <div className='grid grid-cols-3 gap-14'>
 
         <div>
-        <label htmlFor="semester" className='font-semibold mt-2 me-2'>Select Semester: </label>
+        <label htmlFor="semester" className='font-semibold mt-2 me-2'><section className='text'>Select Semester:</section> </label>
         <select id="semester" value={semester} onChange={(e) => handleSemesterChange(e.target.value)}>
         <option value="">Select</option>
         {semesterOptions.map((option) => (
@@ -66,7 +67,7 @@ const QuestionPaperForm = ({ onSubmit }) => {
         </div>
         
         <div>
-        <label htmlFor="subject" className='font-semibold mt-2 me-2'>Select Subject: </label>
+        <label htmlFor="subject" className='font-semibold mt-2 me-2'><section className='text'>Select Subject: </section></label>
         <select id="subject" value={subject} onChange={(e) => setSubject(e.target.value)}>
         <option value="">Select</option>
         {subjectsForSemester.map((subj) => (

@@ -18,7 +18,7 @@ export default function Dashboard() {
   
   return (
     <div style={{background:' #f6eadd'}}>
-      <div className="container ">
+      <div className="container fulpage" style={{paddingBottom:'5rem'}}>
         <RecoilRoot>
         <External/>
         </RecoilRoot>
@@ -30,7 +30,7 @@ export default function Dashboard() {
 function External(){
   const pap = useRecoilValue(paperAtom)
   const shouldRender = useRecoilValue(shouldRenderAtom)
-  return <div className='fullpage'>
+  return <div >
         <Navbar />
         {/* <MainPage /> */}
         <HeroSection/>
