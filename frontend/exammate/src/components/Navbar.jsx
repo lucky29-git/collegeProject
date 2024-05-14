@@ -16,9 +16,9 @@ export default function Navbar() {
   return (
     <div className="container navcontainer relative">
       <header className="flex flex-wrap items-center justify-between mb-2 ">
-        
-        <div className="col-md-3 mb-2 mb-md-0">
-          <Link to="/" className="inline-flex items-center link-body-emphasis text-decoration-none">
+        <div className='flex flex-wrap items-center justify-between navDiv'>
+        <div className="col-md-3 mb-2 mb-md-0 ">
+          <Link to="/dashboard" className="inline-flex items-center link-body-emphasis text-decoration-none">
             <span>
             <img src={logoImage} alt="logo" className="logoimage" />
               
@@ -42,6 +42,7 @@ export default function Navbar() {
 
         <div className="menu-toggle" onClick={toggleMenu}>
           <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></div>
+        </div>
         </div>
       </header>
     </div>

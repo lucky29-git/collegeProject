@@ -56,7 +56,7 @@ const QuestionPaperForm = ({ onSubmit }) => {
         <div className='grid grid-cols-3 gap-14'>
 
         <div>
-        <label htmlFor="semester" className='font-semibold mt-2'>Select Semester: </label>
+        <label htmlFor="semester" className='font-semibold mt-2 me-2'>Select Semester: </label>
         <select id="semester" value={semester} onChange={(e) => handleSemesterChange(e.target.value)}>
         <option value="">Select</option>
         {semesterOptions.map((option) => (
@@ -66,7 +66,7 @@ const QuestionPaperForm = ({ onSubmit }) => {
         </div>
         
         <div>
-        <label htmlFor="subject" className='font-semibold mt-2 '>Select Subject: </label>
+        <label htmlFor="subject" className='font-semibold mt-2 me-2'>Select Subject: </label>
         <select id="subject" value={subject} onChange={(e) => setSubject(e.target.value)}>
         <option value="">Select</option>
         {subjectsForSemester.map((subj) => (

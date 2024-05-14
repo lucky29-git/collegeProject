@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import QuestionPaper from './QuestionPaper';
+import './HeroSection.css';
 
 const HeroSection = () => {
   const [questionPapers, setQuestionPapers] = useState([]);
