@@ -3,9 +3,20 @@
 .navcontainer {
     margin-bottom: 10rem;
     /* height: 0.8rem; */
-    background-color:#f6eadd;
+    background-color: #f6eadd;
+
   }
   
+  header{
+    max-height: 50vh;
+    height: 10vh;
+  }
+
+  .navDiv{
+    margin-top: -50px;
+    display: flex;
+    gap: 7rem;
+  }
 
   .customLink {
     color: inherit;
@@ -85,6 +96,8 @@
   .logoimage {
     max-height: 10rem;
     width: 20rem; /* Maintain aspect ratio */
+    margin-right: 22rem;
+    margin-top: 1rem;
   }
 
  

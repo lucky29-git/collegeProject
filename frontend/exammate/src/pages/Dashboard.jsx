@@ -6,7 +6,7 @@ import '../index.css'
 import Navbar from '../components/Navbar'
 import MainPage from '../components/MainPage'
 import HeroSection from '../components/HeroSection';
-
+import './Dashboard.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/css'
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
@@ -30,7 +30,7 @@ export default function Dashboard() {
 function External(){
   const pap = useRecoilValue(paperAtom)
   const shouldRender = useRecoilValue(shouldRenderAtom)
-  return <div >
+  return <div className='fullpage'>
         <Navbar />
         {/* <MainPage /> */}
         <HeroSection/>
