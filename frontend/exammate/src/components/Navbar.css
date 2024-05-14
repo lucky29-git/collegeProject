@@ -4,12 +4,13 @@
     margin-bottom: 10rem;
     /* height: 0.8rem; */
     background-color: #f6eadd;
+    
 
   }
   
   header{
     max-height: 50vh;
-    height: 10vh;
+    height: 13vh;
   }
 
   .navDiv{

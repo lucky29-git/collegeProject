@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     z-index: 1000; /* Adjust z-index as needed */
-    background-color: #f8f6f6;
+    background-color: #f6eadd;
     height: 7vh;
     padding-top: 1.3rem;
     margin-bottom: 3rem;
@@ -15,7 +15,7 @@
     /* Add margin or padding to the top of your content so it doesn't get covered by the fixed navbar */
     padding-top: 5vh; /* Adjust as needed based on the height of your navbar */
     margin-top: 0;
-    background-color: #f8f6f6;
+    background-color: transparent;
 
   }
   
@@ -37,14 +37,14 @@
 
   .welcomeGreetContent h2{
     font-size: 3rem;
-    color: rgb(157, 204, 243);
+    color: #720216;
   }
 
   .welcomeGreetContent h1{
     font-weight: bolder;
     padding: 10px;
     font-size: 4.5rem;
-    color: rgb(157, 204, 243);
+    color:#720216;
   }
 
   .aboutWebsite{
@@ -83,6 +83,7 @@
     align-items: center;
     padding: 10px;
     padding-top: 2rem;
+    background-color: #986a4b;
   }
   
   .TeamHeading h1 {
@@ -91,6 +92,8 @@
   }
   
   .TeamHeading p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(236, 216, 190);
     padding: 10px;
   }
   
@@ -98,6 +101,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next row */
     justify-content: center; /* Center the cards horizontally */
+    background-color: #986a4b;
   }
   
   .col-lg-3 {
@@ -118,8 +122,10 @@
   }
 
   footer{
+    color: #1f0308;
     text-align: center;
     padding: 10px;
+    background-color: #d1bbac;
   }
 
   @media screen and (max-width: 576px) {
