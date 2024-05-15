@@ -21,7 +21,7 @@ export default function RenderPaper({title, files}){
         </div>
 
         <div className='preview flex gap-10 items-center'>
-        <Link to={'/www.google.com'} >Preview </Link>
+        <Link to={files} target='_blank' >Preview </Link>
         {/* <button  >Preview</button> */}
         <button onClick={HandleDownload} className='download-button'>Download</button>
         </div>
