@@ -76,7 +76,7 @@ const QuestionPaperForm = ({ onSubmit }) => {
         </select>
         </div>
 
-        <button type="submit" >Get Question Papers</button>
+        <button type="submit" >Get Question Papers & Notes</button>
         </div>
         
     </form>
