@@ -19,6 +19,7 @@ function App() {
   //   <Navbar />
   //   <MainPage />
   // </div>
+  
     
     <BrowserRouter>
     <Routes>
