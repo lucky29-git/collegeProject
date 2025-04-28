@@ -2,11 +2,11 @@ const express = require('express')
 const router = express.Router()
 const port = 3000;
 const app = express()
+const cors = require('cors');
+app.use(cors())
 const cloudinary = require('cloudinary').v2
 const fileUpload = require('express-fileupload')
-const cors = require('cors');
 const { QuestionPaper } = require('./db');
-app.use(cors())
 app.use(express.json())
 app.use(fileUpload({
     useTempFiles : true,
