@@ -53,6 +53,7 @@ app.post('/upload', async function(req, res){
         // console.log(req.body);
         const image_url = result.secure_url;
         const newPaper = await QuestionPaper.create({
+            branch: req.body.branch,
             title: req.body.title,
             semester: req.body.semester,
             subject: req.body.subject,
@@ -76,8 +77,10 @@ app.post('/upload', async function(req, res){
 app.post('/paper' , async function(req, res){
     const semester = req.body.semester;
     const subject = req.body.subject;
+    const branch = req.body.branch;
     console.log(req.body);
     const value = await QuestionPaper.find({
+        branch: branch,
         semester: semester,
         subject: subject
     })
